@@ -1,0 +1,10 @@
+name = list_conf_dyn
+description = cree une liste dynamique des conferences a venir pour webform
+package = liste_conf_dyn
+core = 7.x
+files[] = list_conf_dyn.module
+
+version = "7.1"
+core = "7.x"
+project = "list_conf_dyn"
+datestamp = "1369296693"

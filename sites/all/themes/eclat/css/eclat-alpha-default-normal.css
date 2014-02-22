@@ -1,0 +1,25 @@
+/* This file will hold styles that are loaded using the same media query as the normal grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+
+.gros-champ {
+    font-size: 1.3em;
+}
+
+.texte-preface, .view-3-conf-bloc .view-content {
+  height:180px;
+}
+
+.lien-suite {
+  display:none;
+}
+
+.escam_normal {
+    display:inline;
+}
+
+#page-title{
+    width:930px;
+  padding-left:10px;
+
+}

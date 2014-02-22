@@ -1,0 +1,108 @@
+/* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+
+
+#zone-content{
+    min-height:500px;
+}
+
+.view-liste-evenements img{
+  float:left;
+  margin-bottom:0px;
+  margin-top: 5px;
+  display:inline;
+}
+
+#zone-header .region{
+  margin-bottom:0px;
+}
+
+#region-sub-footer-first{
+  margin-left:10px;
+  margin-right:0px;
+  padding-left:0px;
+  padding-right:10px;
+}
+
+#region-sub-footer-second{
+  margin-left:0px;
+  margin-right:0px;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+#region-sub-footer-third{
+  margin-left:0px;
+  margin-right:10px;
+  padding-left:10px;
+  padding-right:0px;
+}
+
+#region-sub-footer-third .content {
+  padding-right:10%;
+}
+
+
+#region-sub-footer-first .content {
+  padding-left:10%;
+}
+
+.texte-preface, .view-3-conf-bloc .view-content {
+  padding-bottom:50px;
+}
+
+.lien-suite {
+  display:none;
+}
+
+.escam_mobile {
+    display:none;
+}
+
+.escam_narrow {
+    display:none;
+}
+
+.escam_normal {
+    display:none;
+}
+
+.escam_wide {
+    display:none;
+}
+
+#node-web-form7 {
+    overflow:hidden;
+}
+
+#webform-client-form-7 {
+  width:60%;
+  float:right;
+}
+
+#webform-client-form-7 textarea{
+  width:300px;
+}
+
+#webform-client-form-8 {
+
+}
+
+.form-col-gauche {
+    margin-top:5px;
+    width:40%;
+    float:left;
+}
+
+#region-sidebar-second{
+    padding-top:40px;
+}
+
+.illu_article{
+    float:left;
+    width:40%;
+    margin-right:3%;
+}
+
+#page-title {
+    letter-spacing:0;
+}

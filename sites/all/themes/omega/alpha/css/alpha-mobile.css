@@ -1,0 +1,114 @@
+
+/**
+ * This will display them grid elements as block rather than inline for mobile browsers 
+ * (essentially anything smaller than the narrow grid size, and media query declares. 
+ */
+
+/** CUSTOM */
+
+
+.view-liste-evenements img{
+  float:left;
+  display:none;
+  margin-bottom:5px;
+}
+
+.gros-champ {
+    font-size: 1em;
+}
+
+#region-sub-footer-third .content {
+  padding-right:5%;
+}
+
+
+#region-sub-footer-first .content {
+  padding-left:5%;
+}
+
+.bouton-suite {
+  display:none;
+}
+
+.texte-preface, .view-3-conf-bloc .view-content {
+  padding-bottom:20px;
+}
+
+.lien-suite {
+  display:inline;
+  margin-left:20px;
+}
+
+.escam_wide {
+  display:none;
+}
+
+.escam_normal{
+  display:none;
+}
+
+.escam_narrow{
+  display:none;
+}
+
+.escam_mobile {
+  display:inline;
+}
+
+.square {
+  width:218px;
+  float:left;
+}
+
+#zone-header .region{
+  margin-bottom:0;
+}
+
+
+#page-title{
+    width:auto;
+  padding-left:10px;
+
+}
+
+#node-web-form7 form {
+  width:100%;
+  float:none;
+}
+
+.form-col-gauche {
+    width:100%;
+    float:none;
+}
+
+#webform-client-form-7 textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
+  width:200px;
+}
+
+.illu_article{
+    float:left;
+    width:40%;
+    margin-right:3%;
+}
+
+/** FIN CUSTOM **/
+
+.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10,
+.grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-17, .grid-18, .grid-19,
+.grid-20, .grid-21, .grid-22, .grid-23, .grid-24 {
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Grid panels inside blocks need their margins negated. */
+.container-12 .block .omega-grid,
+.container-16 .block .omega-grid,
+.container-24 .block .omega-grid {
+  position: relative;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+#region-user-second ul li {
+    float: left;
+}

@@ -1,0 +1,42 @@
+<?php
+
+  /**
+   * Provide a select options component to Webform. The values are
+   * populated via a call to _demo_get_options, which returns
+   * an array of nodes.
+   *
+   * @return void
+   * @author Kosta Harlan
+   */
+  function list_conf_dyn_webform_select_options_info() {
+   $items = array();
+
+     if (function_exists('_list_conf_dyn_get_conf_nodes')) {
+          $items['conference-nodes'] = array(
+       'title' => t('Conferences'),
+        'options callback' => '_list_conf_dyn_get_conf_nodes',
+        );
+   }
+
+    return $items;
+  }
+?>
+
+<?php
+
+/**
+* Returns an array of conferences nodes keyed on the node ID.
+*
+* @return array
+* @author Kosta Harlan
+*/
+function _list_conf_dyn_get_conf_nodes() {
+   $nodes = array();
+   $select = db_query("SELECT nid, title, field_date_value, field_intervenant_value FROM
+              {node} INNER JOIN {field_data_field_date} ON {node}.nid = {field_data_field_date}.entity_id  INNER JOIN {field_data_field_intervenant} ON {node}.nid = {field_data_field_intervenant}.entity_id WHERE type = 'conference' AND field_date_value>CURDATE()");
+    foreach ($select as $node) {
+        $nodes[$node->nid] = substr($node->field_date_value,8,2).'/'.substr($node->field_date_value,5,2).'/'.substr($node->field_date_value,0,4).' - '.substr($node->field_date_value,11,5).' : '.$node->title. ', par '.$node->field_intervenant_value;
+    }
+    return $nodes; 
+}
+?>
